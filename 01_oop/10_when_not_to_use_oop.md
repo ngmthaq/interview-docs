@@ -3,11 +3,13 @@
 A senior answer shows OOP isn't a silver bullet.
 
 **When OOP may be overkill:**
+
 - Simple scripts / data-transformation pipelines → functional style is cleaner.
 - Highly concurrent systems → mutable shared object state causes race conditions; immutability (functional) is safer.
 - Performance-critical / data-oriented code → object graphs add indirection and cache-unfriendly memory layout.
 
 **Trade-offs of OOP:**
+
 - Over-abstraction: too many layers, interfaces, and indirection ("enterprise" bloat).
 - Deep inheritance trees become fragile and hard to reason about.
 - Mutable state makes concurrency harder.

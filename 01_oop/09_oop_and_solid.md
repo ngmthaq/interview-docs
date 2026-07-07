@@ -8,4 +8,4 @@ SOLID is a set of design principles built **on top of** OOP to keep systems main
 - **I** — Interface Segregation: many small interfaces > one fat interface.
 - **D** — Dependency Inversion: depend on abstractions, not concretions.
 
-**Interview framing:** OOP gives you the *tools* (encapsulation, polymorphism, abstraction); SOLID tells you *how to use them well* so code stays extensible and testable.
+**Interview framing:** OOP gives you the _tools_ (encapsulation, polymorphism, abstraction); SOLID tells you _how to use them well_ so code stays extensible and testable.

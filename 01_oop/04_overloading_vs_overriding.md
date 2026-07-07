@@ -5,11 +5,15 @@
 
 ```ts
 class Animal {
-  speak() { return 'some sound'; }
+  speak() {
+    return "some sound";
+  }
 }
 
 class Dog extends Animal {
-  speak() { return 'Woof'; } // overriding
+  speak() {
+    return "Woof";
+  } // overriding
 }
 ```
 

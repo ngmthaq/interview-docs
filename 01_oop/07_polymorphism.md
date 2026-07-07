@@ -9,12 +9,16 @@ interface Shape {
 
 class Circle implements Shape {
   constructor(private r: number) {}
-  area() { return Math.PI * this.r ** 2; }
+  area() {
+    return Math.PI * this.r ** 2;
+  }
 }
 
 class Square implements Shape {
   constructor(private s: number) {}
-  area() { return this.s ** 2; }
+  area() {
+    return this.s ** 2;
+  }
 }
 
 function totalArea(shapes: Shape[]) {

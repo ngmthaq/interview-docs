@@ -8,16 +8,21 @@
 ```ts
 // Composition
 class Engine {
-  start() { return 'engine on'; }
+  start() {
+    return "engine on";
+  }
 }
 
 class Car {
   constructor(private engine: Engine) {}
-  start() { return this.engine.start(); }
+  start() {
+    return this.engine.start();
+  }
 }
 ```
 
 **Why composition wins:**
+
 - More flexible — swap behavior at runtime
 - Avoids deep, rigid class trees
 - Easier to test (inject mocks)

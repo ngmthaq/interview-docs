@@ -2,21 +2,25 @@
 
 Access modifiers control **who can see and use** a class member. They are how encapsulation is enforced.
 
-| Modifier | Accessible from |
-| --- | --- |
-| `public` | Anywhere (default) |
+| Modifier    | Accessible from                  |
+| ----------- | -------------------------------- |
+| `public`    | Anywhere (default)               |
 | `protected` | The class **and** its subclasses |
-| `private` | Only inside the same class |
+| `private`   | Only inside the same class       |
 
 ```ts
 class Account {
-  public owner: string;       // anyone
-  protected type = 'savings'; // this class + subclasses
-  private balance = 0;        // this class only
+  public owner: string; // anyone
+  protected type = "savings"; // this class + subclasses
+  private balance = 0; // this class only
 
-  constructor(owner: string) { this.owner = owner; }
+  constructor(owner: string) {
+    this.owner = owner;
+  }
 
-  deposit(amount: number) { this.balance += amount; } // controlled access
+  deposit(amount: number) {
+    this.balance += amount;
+  } // controlled access
 }
 ```
 

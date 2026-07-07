@@ -1,11 +1,11 @@
 # 6. What is an abstract class vs an interface? (Mid)
 
-| | Abstract class | Interface |
-| --- | --- | --- |
-| Can have implementation | Yes (partial) | No (contract only) |
-| Fields / state | Yes | No (in most languages) |
-| Multiple inheritance | No | Yes (implement many) |
-| Use when | Sharing common base logic | Defining a capability/contract |
+|                         | Abstract class            | Interface                      |
+| ----------------------- | ------------------------- | ------------------------------ |
+| Can have implementation | Yes (partial)             | No (contract only)             |
+| Fields / state          | Yes                       | No (in most languages)         |
+| Multiple inheritance    | No                        | Yes (implement many)           |
+| Use when                | Sharing common base logic | Defining a capability/contract |
 
 ```ts
 interface Payable {
@@ -14,8 +14,10 @@ interface Payable {
 
 abstract class BasePayment implements Payable {
   abstract pay(amount: number): void;
-  protected log(msg: string) { console.log(msg); } // shared logic
+  protected log(msg: string) {
+    console.log(msg);
+  } // shared logic
 }
 ```
 
-**Rule:** Use an **interface** to define *what* something can do; use an **abstract class** when subclasses *share real implementation*.
+**Rule:** Use an **interface** to define _what_ something can do; use an **abstract class** when subclasses _share real implementation_.

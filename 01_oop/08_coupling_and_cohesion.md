@@ -4,6 +4,7 @@
 - **Cohesion** = how focused a module is on a single responsibility. **Want it HIGH.**
 
 **Tight coupling (bad):**
+
 ```ts
 class OrderService {
   private mailer = new SmtpMailer(); // hard-wired dependency
@@ -11,8 +12,11 @@ class OrderService {
 ```
 
 **Loose coupling (good) — via dependency injection + interface:**
+
 ```ts
-interface Mailer { send(to: string, body: string): void; }
+interface Mailer {
+  send(to: string, body: string): void;
+}
 
 class OrderService {
   constructor(private mailer: Mailer) {} // injected, swappable

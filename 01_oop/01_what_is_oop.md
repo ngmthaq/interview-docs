@@ -14,4 +14,4 @@ class User {
 }
 ```
 
-**Key point:** OOP is a *way of structuring code*, not a library or a design pattern.
+**Key point:** OOP is a _way of structuring code_, not a library or a design pattern.

@@ -6,7 +6,9 @@
 class Timer {
   seconds = 0;
 
-  tick() { this.seconds++; }
+  tick() {
+    this.seconds++;
+  }
 }
 
 const t = new Timer();
@@ -20,7 +22,9 @@ fn(); // ❌ `this` is undefined — call site lost the object
 // 1. Arrow function — captures `this` lexically (from surrounding scope)
 class Timer {
   seconds = 0;
-  tick = () => { this.seconds++; }; // always bound to the instance
+  tick = () => {
+    this.seconds++;
+  }; // always bound to the instance
 }
 
 // 2. Explicit bind

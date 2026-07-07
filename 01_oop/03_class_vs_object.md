@@ -8,8 +8,8 @@ class Car {
   constructor(public color: string) {}
 }
 
-const redCar = new Car('red');   // object
-const blueCar = new Car('blue'); // another object
+const redCar = new Car("red"); // object
+const blueCar = new Car("blue"); // another object
 ```
 
 One class → many objects, each with independent state.

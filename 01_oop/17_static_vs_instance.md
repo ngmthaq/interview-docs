@@ -5,22 +5,26 @@
 
 ```ts
 class User {
-  static count = 0;          // shared by the whole class
-  id: number;                // unique per instance
+  static count = 0; // shared by the whole class
+  id: number; // unique per instance
 
   constructor() {
-    User.count++;            // access via class name
-    this.id = User.count;    // access via instance
+    User.count++; // access via class name
+    this.id = User.count; // access via instance
   }
 
-  static reset() { User.count = 0; } // utility, no instance needed
+  static reset() {
+    User.count = 0;
+  } // utility, no instance needed
 }
 
-new User(); new User();
+new User();
+new User();
 console.log(User.count); // 2
 ```
 
 **Use static for:**
+
 - Counters / shared config
 - Factory methods (`User.fromJSON(...)`)
 - Pure utility helpers that don't need instance state
