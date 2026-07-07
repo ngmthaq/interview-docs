@@ -17,12 +17,12 @@ if (cluster.isPrimary) {
 
 **`worker_threads`** — multiple **threads** inside one process, able to **share memory** (`SharedArrayBuffer`). Best for CPU-bound work.
 
-| | cluster | worker_threads |
-| --- | --- | --- |
-| Unit | Process | Thread |
-| Memory | Isolated | Can share |
-| Best for | Scaling I/O across cores | CPU-heavy computation |
-| Communication | IPC messages | `postMessage` / shared memory |
+|               | cluster                  | worker_threads                |
+| ------------- | ------------------------ | ----------------------------- |
+| Unit          | Process                  | Thread                        |
+| Memory        | Isolated                 | Can share                     |
+| Best for      | Scaling I/O across cores | CPU-heavy computation         |
+| Communication | IPC messages             | `postMessage` / shared memory |
 
 **Note:** in production, a process manager (PM2) or the platform (Kubernetes) often replaces manual `cluster` usage.
 

@@ -2,13 +2,13 @@
 
 Both run JavaScript on V8, but the **environment and available APIs** differ.
 
-| Aspect | Browser | Node.js |
-| --- | --- | --- |
-| Global object | `window` | `global` / `globalThis` |
-| DOM / `document` | Yes | No |
-| File system, network sockets | Restricted | Full access (`fs`, `net`) |
-| Modules | ES Modules | CommonJS + ES Modules |
-| APIs | `fetch`, `localStorage` | `process`, `Buffer`, `__dirname` |
+| Aspect                       | Browser                 | Node.js                          |
+| ---------------------------- | ----------------------- | -------------------------------- |
+| Global object                | `window`                | `global` / `globalThis`          |
+| DOM / `document`             | Yes                     | No                               |
+| File system, network sockets | Restricted              | Full access (`fs`, `net`)        |
+| Modules                      | ES Modules              | CommonJS + ES Modules            |
+| APIs                         | `fetch`, `localStorage` | `process`, `Buffer`, `__dirname` |
 
 ```js
 // Works only in Node — no DOM here

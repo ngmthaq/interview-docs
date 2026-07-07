@@ -18,7 +18,7 @@ const zlib = require("zlib");
 await pipeline(
   fs.createReadStream("big.log"),
   zlib.createGzip(),
-  fs.createWriteStream("big.log.gz")
+  fs.createWriteStream("big.log.gz"),
 );
 ```
 
