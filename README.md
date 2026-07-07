@@ -6,9 +6,10 @@ A personal interview-prep knowledge base. Each topic lives in a numbered folder,
 
 | #   | Topic                 | Questions | Folder                                     |
 | --- | --------------------- | --------- | ------------------------------------------ |
+| 00  | Algorithms & DS       | 20        | [`00_algorithm`](00_algorithm)             |
 | 01  | OOP & FP fundamentals | 20        | [`01_oop`](01_oop)                         |
 | 02  | Design patterns       | 20        | [`02_design_patterns`](02_design_patterns) |
-| 03  | Databases & ORM       | 25        | [`03_database`](03_database)               |
+| 03  | Databases & ORM       | 35        | [`03_database`](03_database)               |
 | 04  | JavaScript            | 35        | [`04_js`](04_js)                           |
 | 05  | TypeScript            | 30        | [`05_ts`](05_ts)                           |
 | 06  | React.js              | 35        | [`06_reactjs`](06_reactjs)                 |
@@ -19,13 +20,14 @@ A personal interview-prep knowledge base. Each topic lives in a numbered folder,
 | 11  | Next.js               | 30        | [`11_nextjs`](11_nextjs)                   |
 | 12  | Nuxt.js               | 30        | [`12_nuxtjs`](12_nuxtjs)                   |
 
-**Total: 340 questions** across 12 topics.
+**Total: 370 questions** across 13 topics.
 
 ## What's inside
 
+- **[00_algorithm](00_algorithm)** — Big O, time/space complexity, core data structures (arrays, linked lists, stacks, queues, hash tables, trees, graphs, heaps), binary search, sorting, recursion, two-pointer, sliding window, BFS/DFS, DP, greedy, backtracking.
 - **[01_oop](01_oop)** — four pillars, composition vs inheritance, SOLID, polymorphism, `this` binding, OOP vs FP, mutability, pure functions.
 - **[02_design_patterns](02_design_patterns)** — creational/structural/behavioral patterns (singleton, factory, builder, adapter, decorator, observer, strategy), DI, repository, MVC, anti-patterns.
-- **[03_database](03_database)** — SQL vs NoSQL, normalization, ACID, transactions, indexes, joins, isolation levels, locking, sharding/replication, CAP, ORMs, N+1.
+- **[03_database](03_database)** — SQL vs NoSQL, normalization, ACID, transactions, indexes, joins, isolation levels, locking, sharding/replication, CAP, ORMs, N+1, Prisma (schema, client, migrations, relations, transactions, pooling, raw queries).
 - **[04_js](04_js)** — scope, closures, `this`, prototypes, event loop, promises & combinators, async/await, HOFs, generators, Map/Set, Proxy, ES modules, symbols, event delegation.
 - **[05_ts](05_ts)** — types vs interfaces, generics & constraints, narrowing, utility/mapped/conditional types, discriminated unions, `satisfies`, `as const`, assertion functions, branded & recursive types.
 - **[06_reactjs](06_reactjs)** — JSX, hooks, lifecycle, context, memoization, reconciliation, error boundaries, SSR/hydration, server components, concurrent features, `useSyncExternalStore`, React 19 Actions.
